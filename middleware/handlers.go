@@ -169,7 +169,7 @@ func DeleteStock(w http.ResponseWriter, r *http.Request) {
 	deletedRows := deleteStock(int64(id))
 
 	// format the message string
-	msg := fmt.Sprintf("Stock updated successfully. Total rows/record affected %v", deletedRows)
+	msg := fmt.Sprintf("Stock deleted successfully. Total rows/record affected %v", deletedRows)
 
 	// format the reponse message
 	res := response{
